@@ -1,0 +1,31 @@
+{
+    "name": "tests",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "type": "module",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "text-encoding": "^0.7.0"
+    },
+    "devDependencies": {
+        "jest": "^27.5.1",
+        "jquery": "^3.6.4",
+        "jsdom": "^21.1.1",
+        "ts-jest": "^27.1.3"
+    },
+    "scripts": {
+        "test": "npx jest",
+        "start": "node server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "transform": {
+        "^.+\\.jsx?$": "babel-jest",
+        "^.+\\.js$": "babel-jest",
+        "^.+\\.ts$": "ts-jest",
+        "./pintotext.js": "babel-jest"
+    }
+}
